@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Live Classroom Captions</title>
+  <style>
+    :root {
+      --ink: #1d2330;
+      --ink-soft: #5a6373;
+      --ink-faint: #8b94a3;
+      --line: #e7e9ee;
+      --brand: #c0392b;
+      --brand-tint: #fbeceb;
+      --bg: #f4f5f7;
+      --surface: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 48px 44px;
+      box-shadow: 0 1px 2px rgba(20, 27, 45, 0.06);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .dot {
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--brand);
+      box-shadow: 0 0 0 5px var(--brand-tint);
+      flex-shrink: 0;
+    }
+    h1 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .subtitle {
+      color: var(--ink-soft);
+      font-size: 15px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--ink-faint);
+      margin-top: 6px;
+    }
+    h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 21px;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+    p {
+      margin-bottom: 14px;
+      color: var(--ink);
+    }
+    ul {
+      margin: 12px 0 18px 22px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong { color: var(--ink); }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .callout {
+      background: var(--brand-tint);
+      border-left: 3px solid var(--brand);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 18px 0;
+      font-size: 14.5px;
+      color: #7a2018;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: var(--ink-faint);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">
+      <span class="dot"></span>
+      <h1>Privacy Policy</h1>
+    </div>
+    <p class="subtitle">
+      Live Classroom Captions — Chrome Extension
+      <span class="updated">Last updated: May 28, 2026</span>
+    </p>
+
+    <p>
+      Live Classroom Captions ("the extension") is a Chrome extension that provides live speech-to-text captioning with on-screen translation overlays for classroom teaching. This Privacy Policy explains what information the extension accesses, how it is used, and what is and is not stored or transmitted.
+    </p>
+
+    <div class="callout">
+      <strong>The short version:</strong> The extension processes your microphone audio locally in your browser to generate captions, sends caption text to Google's translation service to produce translations for students, and (only if you choose to enable it) saves transcripts of those captions as Google Docs in your Google Drive. Audio is never recorded, stored, or transmitted. The extension does not collect analytics, advertising data, or any personal information beyond what is described below.
+    </div>
+
+    <h2>What the extension accesses</h2>
+
+    <p><strong>Microphone audio.</strong> When you start a captioning session, the extension uses your browser's Web Speech Recognition API to convert your spoken words into text in real time. This happens in your own browser. The raw audio is processed locally by Chrome's speech recognition service and is not recorded, saved, or transmitted by the extension. Only the resulting text transcription is used.</p>
+
+    <p><strong>Caption text for translation.</strong> When you enable target languages, the extension sends the transcribed caption text to Google Translate's public translation endpoint so the captions can be displayed in those languages for students. Only the caption text itself is sent — no identifying information, microphone audio, or personal data is included in translation requests.</p>
+
+    <p><strong>Your Google Drive (only if you enable transcript saving).</strong> If you choose to enable transcript saving, the extension requests permission to access your Google Drive using the <code>drive.file</code> OAuth scope. This scope grants the extension access <em>only</em> to files the extension itself creates. The extension cannot read, modify, or see any of your other Google Drive files. When transcript saving is enabled, the extension creates Google Docs containing your session transcripts in a folder you select via Google's folder picker.</p>
+
+    <p><strong>The active browser tab.</strong> The extension injects content scripts into the tab you are viewing in order to display caption overlay boxes on the page. It reads no page content; the overlay is drawn on top of whatever page you are presenting.</p>
+
+    <h2>What the extension does NOT access</h2>
+
+    <ul>
+      <li>The extension does not record, store, or transmit microphone audio.</li>
+      <li>The extension does not read the content of web pages you visit.</li>
+      <li>The extension does not collect analytics, telemetry, or usage statistics.</li>
+      <li>The extension does not display advertising or share data with advertisers.</li>
+      <li>The extension does not access your full Google Drive — only files it creates itself.</li>
+      <li>The extension does not access your email, contacts, calendar, or any other Google service.</li>
+    </ul>
+
+    <h2>Where data is stored</h2>
+
+    <p><strong>On your computer.</strong> Your settings (preferred languages, caption box positions, styling preferences, chemistry vocabulary lists, etc.) are stored in Chrome's local extension storage on your own computer. Transcripts of recent sessions are also stored there until they are either saved to your Drive or deleted by you.</p>
+
+    <p><strong>In your Google Drive.</strong> If you enable transcript saving, completed transcripts are saved as Google Docs in the Drive folder you chose. These Docs are owned by your Google account and are subject to your own Drive sharing settings. The extension's developer cannot see or access them.</p>
+
+    <p><strong>Nowhere else.</strong> The extension does not send your data to any developer-controlled server. There is no backend service operated by the developer. Transcript data, settings, and translation requests do not flow through any third-party system other than Google's own services (Web Speech, Translate, and Drive) as described above.</p>
+
+    <h2>Third-party services</h2>
+
+    <p>The extension makes use of the following third-party services:</p>
+
+    <ul>
+      <li><strong>Chrome's Web Speech Recognition API</strong> — for converting your spoken audio to text in your browser. Google's privacy practices for this service apply: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li><strong>Google Translate</strong> — for translating caption text into student languages. Caption text is sent to Google's public translation endpoint.</li>
+      <li><strong>Google Drive</strong> — only if you enable transcript saving. Used to create Doc files containing your session transcripts in your selected folder.</li>
+      <li><strong>Google Picker</strong> — only when you choose a Drive folder for transcripts. Used to display Google's standard folder selection interface.</li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+
+    <p>The extension is designed for use by teachers in classroom settings. It is intended to be operated by adult educators. The extension does not knowingly collect any information from children directly. Students whose voices may be captured in student-response mode have their speech transcribed and translated in the same way as the teacher's speech: audio is not stored, only the resulting text appears in captions and (if enabled) the saved transcript.</p>
+
+    <p>Teachers should follow their school's and district's policies regarding the recording of classroom transcripts. Transcripts may contain student responses, which are educational records subject to FERPA in U.S. schools. The extension provides editing and deletion tools so teachers can review and remove sensitive content before saving.</p>
+
+    <h2>Your control</h2>
+
+    <ul>
+      <li>You can stop captioning at any time by clicking Stop Captions in the extension popup.</li>
+      <li>You can disable transcript recording at any time by unchecking "Record transcripts" in the popup.</li>
+      <li>You can revoke the extension's access to your Google Drive at any time by visiting <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">https://myaccount.google.com/permissions</a> and removing the application.</li>
+      <li>You can delete any saved transcripts directly from the extension's transcript viewer page, or from Google Drive.</li>
+      <li>You can uninstall the extension at any time, which removes all locally stored settings and transcripts.</li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+
+    <p>This Privacy Policy may be updated occasionally as the extension evolves. The "Last updated" date at the top of this page reflects the most recent revision. Material changes affecting how user data is handled will be reflected in the policy before the corresponding changes take effect in the extension.</p>
+
+    <h2>Contact</h2>
+
+    <p>
+      Questions about this Privacy Policy or the extension's data practices can be sent to:
+      <br>
+      <a href="mailto:chris85cool17@gmail.com">Chris Leatherwood</a>
+    </p>
+
+    <div class="footer">
+      Live Classroom Captions • Open-source Chrome extension for classroom teaching
+    </div>
+  </div>
+</body>
+</html>
