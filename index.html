@@ -1,3 +1,4 @@
+<!-- privacy-policy.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,7 +129,7 @@
 
     <p><strong>Caption text for translation.</strong> When you enable target languages, the extension sends the transcribed caption text to Google Translate's public translation endpoint so the captions can be displayed in those languages for students. Only the caption text itself is sent — no identifying information, microphone audio, or personal data is included in translation requests.</p>
 
-    <p><strong>Your Google Drive (only if you enable transcript saving).</strong> If you choose to enable transcript saving, the extension requests permission to access your Google Drive using the <code>drive.file</code> OAuth scope. This scope grants the extension access <em>only</em> to files the extension itself creates. The extension cannot read, modify, or see any of your other Google Drive files. When transcript saving is enabled, the extension creates Google Docs containing your session transcripts in a folder you select via Google's folder picker.</p>
+    <p><strong>Your Google Drive (only if you enable transcript saving).</strong> If you choose to enable transcript saving, the extension requests permission to access your Google Drive using the <code>drive.file</code> OAuth scope. This scope grants the extension access <em>only</em> to files the extension itself creates. The extension cannot read, modify, or see any of your other Google Drive files. When transcript saving is enabled, the extension automatically creates a folder named "Live Classroom Captions Transcripts" in your Drive and saves your session transcripts there as Google Docs. You can move, rename, or delete this folder at any time; if it is removed, the extension simply creates it again.</p>
 
     <p><strong>The active browser tab.</strong> The extension injects content scripts into the tab you are viewing in order to display caption overlay boxes on the page. It reads no page content; the overlay is drawn on top of whatever page you are presenting.</p>
 
@@ -147,7 +148,7 @@
 
     <p><strong>On your computer.</strong> Your settings (preferred languages, caption box positions, styling preferences, chemistry vocabulary lists, etc.) are stored in Chrome's local extension storage on your own computer. Transcripts of recent sessions are also stored there until they are either saved to your Drive or deleted by you.</p>
 
-    <p><strong>In your Google Drive.</strong> If you enable transcript saving, completed transcripts are saved as Google Docs in the Drive folder you chose. These Docs are owned by your Google account and are subject to your own Drive sharing settings. The extension's developer cannot see or access them.</p>
+    <p><strong>In your Google Drive.</strong> If you enable transcript saving, completed transcripts are saved as Google Docs in a folder the extension creates in your Drive (named "Live Classroom Captions Transcripts"). These Docs are owned by your Google account and are subject to your own Drive sharing settings. The extension's developer cannot see or access them.</p>
 
     <p><strong>Nowhere else.</strong> The extension does not send your data to any developer-controlled server. There is no backend service operated by the developer. Transcript data, settings, and translation requests do not flow through any third-party system other than Google's own services (Web Speech, Translate, and Drive) as described above.</p>
 
@@ -158,8 +159,7 @@
     <ul>
       <li><strong>Chrome's Web Speech Recognition API</strong> — for converting your spoken audio to text in your browser. Google's privacy practices for this service apply: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
       <li><strong>Google Translate</strong> — for translating caption text into student languages. Caption text is sent to Google's public translation endpoint.</li>
-      <li><strong>Google Drive</strong> — only if you enable transcript saving. Used to create Doc files containing your session transcripts in your selected folder.</li>
-      <li><strong>Google Picker</strong> — only when you choose a Drive folder for transcripts. Used to display Google's standard folder selection interface.</li>
+      <li><strong>Google Drive</strong> — only if you enable transcript saving. Used to create Doc files containing your session transcripts in a folder the extension creates.</li>
     </ul>
 
     <h2>Children's privacy</h2>
@@ -187,7 +187,7 @@
     <p>
       Questions about this Privacy Policy or the extension's data practices can be sent to:
       <br>
-      <a href="mailto:chris85cool17@gmail.com">Chris Leatherwood</a>
+      <a href="mailto:chris85cool17@gmail.com">chris85cool17@gmail.com</a>
     </p>
 
     <div class="footer">
